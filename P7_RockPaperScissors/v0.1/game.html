@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="./styles/game.css">
+    <link rel="icon" href="./assets/images/rock.png">
+</head>
+<body>
+    <div class="headingbox">
+        <img class="heading" src="./assets/images/rockpaperscissorslogo2.png">
+    </div>
+
+    <div class="image-container">
+        <div class="box1">
+            <div class="image1">
+                <img id="rock" src="./assets/images/rock.png"  style="display:none"/>
+                <img id="paper" src="./assets/images/paper.png"  style="display:none"/>
+                <img id="scissors" src="./assets/images/scissors.png"  style="display:none"/>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="image2" id="box2">
+                <img id="rock2" src="./assets/images/rock.png"  style="display:none"/>
+                <img id="paper2" src="./assets/images/paper.png"  style="display:none"/>
+                <img id="scissors2" src="./assets/images/scissors.png"  style="display:none"/>
+            </div>
+        </div>
+        </div>
+    </div>
+<div class="score1">
+    <div class="player">
+        <p>Player Score:</p><br>
+        <h2 class="playerscore"></h2>
+    </div>
+    </div>
+
+    <div class="score2">
+        <div class="computer">
+            <p>Computer Score:</p><br>
+            <h2 class="computerscore"></h2>
+        </div>
+        </div>
+
+        <div class="buttons">
+                <button class="button1" onclick="rockAppear()">ROCK</button>
+                <button class="button2" onclick="paperAppear()">PAPER</button>
+                <button class="button3" onclick="scissorsAppear()">SCISSORS</button>
+        </div>
+
+        <div class="credit">
+            <img class="mycredit" src="./assets/images/credit.png">
+        </div>
+    </div>
+    </div>
+    <script src="./js/game.js"></script>
+</body>
+</html>

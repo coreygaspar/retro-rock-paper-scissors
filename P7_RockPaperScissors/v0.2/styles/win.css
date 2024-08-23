@@ -1,0 +1,123 @@
+/* Elements */
+/* Universal Selector Reset */
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url("../assets/fonts/Autom-Bold.otf");
+  }
+
+body{
+    background-color: #656565;
+    font-family: Pixel;
+}
+
+.title{
+    /* border: 2px solid red; */
+    height: 54vh;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    animation: fade-in 3.5s;
+}
+
+
+@keyframes fade-in {
+    0%   { opacity:0; }
+    100%  { opacity:1; }
+}
+
+.heading{
+    width: 70%;
+    margin-top: -10em;
+    animation: zoom-in 3s;
+}
+
+@keyframes zoom-in {
+    0%{transform: scale(.4, .4);}
+    100%{transform: scale(1, 1);}
+}
+
+.button-area{
+    padding-top:20px;
+    /* border: 2px solid red; */
+    margin-top: 80px;
+    height: 22vh;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button{
+    font-family: Pixel;
+    color: white;
+    font-size: 80px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    background-color: #006CFF;
+    border: 6px solid #06306A;
+  box-shadow:   -8px 0 0 0 #06306A,
+                 8px 0 0 0 #06306A,
+                 0 -9px 0 0 #06306A,
+                 0 9px 0 0 #06306A;
+}
+
+.button:hover{
+    color: yellow;
+    background-color: #c2c2c2;
+    border: 6px solid #747474;
+  box-shadow:   -8px 0 0 0 #747474,
+                 8px 0 0 0 #747474,
+                 0 -9px 0 0 #747474,
+                 0 9px 0 0 #747474;
+}
+
+a{
+    text-decoration: none;
+    animation: fade-in-out 2s infinite;
+    opacity: 0;
+}
+
+@keyframes fade-in-out {
+    0%   { opacity:0; }
+    25%  { opacity:1; }
+    50% { opacity:0; }
+    75%  { opacity:1; }
+    100%  { opacity:0; }
+  }
+
+a:hover{
+    animation: none;
+    animation: fade-in-out 0ms;
+    opacity: 1;
+  }
+
+@media only screen and (min-width: 810px) and (max-width: 1080px) {
+    .title{
+        /* border: 2px solid red; */
+        height: 54vh;
+        width: 99.7%;
+    }
+    
+    .heading{
+        margin-top: 5em;
+        width: 100%;
+    }
+
+    .button{
+        width: 40%;
+    }
+}
