@@ -1,0 +1,258 @@
+/* Elements */
+/* Universal Selector Reset */
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url("../assets/fonts/Autom-Bold.otf");
+}
+
+body {
+    background-color: #656565;
+    font-family: Pixel;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    animation: fade-in 3.5s;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.heading {
+    animation: zoom-in 3s;
+    width: 50%;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(.4, .4);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.button-area {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    padding: 1% 0 1% 0;
+}
+
+.button {
+    font-family: Pixel;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding: 2% 3% 2% 3%;
+    background-color: #006CFF;
+    border: 6px solid #06306A;
+    box-shadow: -8px 0 0 0 #06306A,
+        8px 0 0 0 #06306A,
+        0 -9px 0 0 #06306A,
+        0 9px 0 0 #06306A;
+}
+
+.button:hover {
+    color: yellow;
+    background-color: #c2c2c2;
+    border: 6px solid #747474;
+    box-shadow: -8px 0 0 0 #747474,
+        8px 0 0 0 #747474,
+        0 -9px 0 0 #747474,
+        0 9px 0 0 #747474;
+}
+
+a {
+    text-decoration: none;
+    animation: fade-in-out 2s infinite;
+    opacity: 0;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+a:hover {
+    animation: none;
+    animation: fade-in-out 0ms;
+    opacity: 1;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .container {
+        padding: 20% 0 20% 0;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 5% 8% 5% 8%;
+        font-size: 30px;
+        border: 3px solid #06306A;
+        box-shadow: -4px 0 0 0 #06306A,
+            4px 0 0 0 #06306A,
+            0 -3px 0 0 #06306A,
+            0 3px 0 0 #06306A;
+        padding: 5% 4% 5% 4%;
+    }
+
+    .button:hover {
+        border: 3px solid #747474;
+        box-shadow: -4px 0 0 0 #747474,
+            4px 0 0 0 #747474,
+            0 -3px 0 0 #747474,
+            0 3px 0 0 #747474;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .container {
+        padding: 20% 0 20% 0;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 5% 8% 5% 8%;
+        font-size: 30px;
+        border: 3px solid #06306A;
+        box-shadow: -4px 0 0 0 #06306A,
+            4px 0 0 0 #06306A,
+            0 -3px 0 0 #06306A,
+            0 3px 0 0 #06306A;
+        padding: 5% 4% 5% 4%;
+    }
+
+    .button:hover {
+        border: 3px solid #747474;
+        box-shadow: -4px 0 0 0 #747474,
+            4px 0 0 0 #747474,
+            0 -3px 0 0 #747474,
+            0 3px 0 0 #747474;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 695px) {
+    .heading {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 30px;
+        padding: 5% 8% 5% 8%;
+        font-size: 30px;
+        border: 3px solid #06306A;
+        box-shadow: -4px 0 0 0 #06306A,
+            4px 0 0 0 #06306A,
+            0 -3px 0 0 #06306A,
+            0 3px 0 0 #06306A;
+    }
+
+    .button:hover {
+        border: 3px solid #747474;
+        box-shadow: -4px 0 0 0 #747474,
+            4px 0 0 0 #747474,
+            0 -3px 0 0 #747474,
+            0 3px 0 0 #747474;
+    }
+}
+
+@media (min-width: 696px) and (max-width: 768px) {
+    .heading {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 30px;
+        padding: 5% 8% 5% 8%;
+        font-size: 30px;
+        border: 3px solid #06306A;
+        box-shadow: -4px 0 0 0 #06306A,
+            4px 0 0 0 #06306A,
+            0 -3px 0 0 #06306A,
+            0 3px 0 0 #06306A;
+    }
+
+    .button:hover {
+        border: 3px solid #747474;
+        box-shadow: -4px 0 0 0 #747474,
+            4px 0 0 0 #747474,
+            0 -3px 0 0 #747474,
+            0 3px 0 0 #747474;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .heading {
+        width: 70%;
+    }
+
+    .button {
+        font-size: 35px;
+        padding: 2% 3% 2% 3%;
+        font-size: 30px;
+        border: 3px solid #06306A;
+        box-shadow: -4px 0 0 0 #06306A,
+            4px 0 0 0 #06306A,
+            0 -3px 0 0 #06306A,
+            0 3px 0 0 #06306A;
+    }
+
+    .button:hover {
+        border: 3px solid #747474;
+        box-shadow: -4px 0 0 0 #747474,
+            4px 0 0 0 #747474,
+            0 -3px 0 0 #747474,
+            0 3px 0 0 #747474;
+    }
+}
